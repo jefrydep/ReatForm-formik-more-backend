@@ -10,6 +10,14 @@ const [formularionEnviado, setFormularionEnviado] = useState(false)
   // const {id,name,email,}=user;
 
 
+  const onsu = ({userName,password},{resetForm})=>{
+    resetForm()
+    console.log( {userName,password});
+    setFormularionEnviado(true)
+    setTimeout(() => {
+      setFormularionEnviado(false)
+    }, 4000);
+  }
   return (
     <>
       <h1>Login User</h1>
@@ -46,15 +54,7 @@ const [formularionEnviado, setFormularionEnviado] = useState(false)
             password: ''
           }
         }
-        onSubmit={({userName,password},{resetForm}) => {
-          resetForm()
-          console.log( {userName,password});
-          setFormularionEnviado(true)
-          setTimeout(() => {
-            setFormularionEnviado(false)
-          }, 4000);
-          
-        }}
+        onSubmit={ onsu}
       >
         {/* {({ handleChange,values, handleSubmit,handleBlur,errors,touched }) => ( */}
         {({ errors }) => (
@@ -77,7 +77,7 @@ const [formularionEnviado, setFormularionEnviado] = useState(false)
             <br>
             </br>
             <Field
-              type="text"
+              type="password"
               name='password'
               placeholder='password'
               // value={values.password}
