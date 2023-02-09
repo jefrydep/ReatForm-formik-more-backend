@@ -39,3 +39,63 @@
 .read-the-docs {
   color: #888;
 }
+
+.container{
+  border-radius:50px;
+  background-color: burlywood;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.answer{
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  /* text-align: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* align-self: center; */
+  /* text-align: centers; */
+  
+  background-color: whitesmoke;
+}
+.button_container{
+  flex-wrap: wrap;
+  background-color:antiquewhite;
+  border-radius: 20px;
+  display: flex;
+  margin: 20px 20px 20px;
+  padding: 15px 15px;
+  /* flex-direction: row; */
+  /* flex-direction: co; */
+}
+.numberContainer{
+  /* flex-wrap: wrap; */
+  margin: 5px 5px;
+  border-radius: 10px;
+  background-color: blue;
+  /* width: 50px; */
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  /* height: 50px; */
+  color: white;
+  display: flex;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  /* justify-items: center; */
+  flex-direction: column;
+  cursor: pointer;
+  
+
+}
+.operation{
+   background-color: tomato;
+   display:flex
+
+}
